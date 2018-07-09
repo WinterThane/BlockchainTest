@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest", "BlockchainTest\BlockchainTest.csproj", "{699CCB6B-13D9-4814-9C38-057779A33DD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChainCrypto", "BlockChainCrypto\BlockChainCrypto.csproj", "{E399B402-ED92-4CB4-9FB4-16B443DDED8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{699CCB6B-13D9-4814-9C38-057779A33DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{699CCB6B-13D9-4814-9C38-057779A33DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{699CCB6B-13D9-4814-9C38-057779A33DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E399B402-ED92-4CB4-9FB4-16B443DDED8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E399B402-ED92-4CB4-9FB4-16B443DDED8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E399B402-ED92-4CB4-9FB4-16B443DDED8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E399B402-ED92-4CB4-9FB4-16B443DDED8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

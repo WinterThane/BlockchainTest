@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{699CCB6B-13D9-4814-9C38-057779A33DD5}</ProjectGuid>
+    <ProjectGuid>{E399B402-ED92-4CB4-9FB4-16B443DDED8B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BlockchainTest</RootNamespace>
-    <AssemblyName>BlockchainTest</AssemblyName>
+    <RootNamespace>BlockChainCrypto</RootNamespace>
+    <AssemblyName>BlockChainCrypto</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,21 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Block.cs" />
-    <Compile Include="ClaimType.cs" />
-    <Compile Include="Interfaces\IBlock.cs" />
-    <Compile Include="Interfaces\IBlockChain.cs" />
+    <Compile Include="Hashing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BlockChainCrypto\BlockChainCrypto.csproj">
-      <Project>{e399b402-ed92-4cb4-9fb4-16b443dded8b}</Project>
-      <Name>BlockChainCrypto</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
