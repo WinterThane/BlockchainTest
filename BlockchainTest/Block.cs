@@ -56,7 +56,7 @@ namespace BlockchainTest
             bool isValid = true;
 
             var newBlockHash = CalculateBlockHash(prevBlockHash);
-            if(newBlockHash != prevBlockHash)
+            if(newBlockHash != BlockHash)
             {
                 isValid = false;
             }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Block.cs" />
+    <Compile Include="BlockChain.cs" />
     <Compile Include="ClaimType.cs" />
     <Compile Include="Interfaces\IBlock.cs" />
     <Compile Include="Interfaces\IBlockChain.cs" />
