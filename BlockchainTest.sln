@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainMultiTransactionT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTransactionPoolTest", "BlockchainTransactionPoolTest\BlockchainTransactionPoolTest.csproj", "{7577CF17-7F07-4340-9F04-335782A1FF0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfWorkTest", "ProofOfWork\ProofOfWorkTest.csproj", "{24530C3E-B743-4134-9B99-8D9B31C238E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7577CF17-7F07-4340-9F04-335782A1FF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7577CF17-7F07-4340-9F04-335782A1FF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7577CF17-7F07-4340-9F04-335782A1FF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24530C3E-B743-4134-9B99-8D9B31C238E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24530C3E-B743-4134-9B99-8D9B31C238E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24530C3E-B743-4134-9B99-8D9B31C238E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24530C3E-B743-4134-9B99-8D9B31C238E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
