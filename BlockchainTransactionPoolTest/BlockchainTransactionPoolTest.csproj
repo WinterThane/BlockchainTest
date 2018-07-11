@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E399B402-ED92-4CB4-9FB4-16B443DDED8B}</ProjectGuid>
+    <ProjectGuid>{7577CF17-7F07-4340-9F04-335782A1FF0B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BlockChainCrypto</RootNamespace>
-    <AssemblyName>BlockChainCrypto</AssemblyName>
+    <RootNamespace>BlockchainTransactionPoolTest</RootNamespace>
+    <AssemblyName>BlockchainTransactionPoolTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,14 +42,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DigitalSignature.cs" />
-    <Compile Include="Hashing.cs" />
-    <Compile Include="HMAC.cs" />
+    <Compile Include="Block.cs" />
+    <Compile Include="BlockChain.cs" />
+    <Compile Include="ClaimType.cs" />
+    <Compile Include="Interfaces\IBlock.cs" />
+    <Compile Include="Interfaces\IBlockChain.cs" />
+    <Compile Include="Interfaces\IKeyStore.cs" />
+    <Compile Include="Interfaces\ITransaction.cs" />
+    <Compile Include="KeyStore.cs" />
+    <Compile Include="Merkle\Constants.cs" />
+    <Compile Include="Merkle\ExtensionMethods.cs" />
+    <Compile Include="Merkle\MerkleException.cs" />
+    <Compile Include="Merkle\MerkleHash.cs" />
+    <Compile Include="Merkle\MerkleNode.cs" />
+    <Compile Include="Merkle\MerkleProofHash.cs" />
+    <Compile Include="Merkle\MerkleTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionPool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlockChainCrypto\BlockChainCrypto.csproj">
+      <Project>{e399b402-ed92-4cb4-9fb4-16b443dded8b}</Project>
+      <Name>BlockChainCrypto</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

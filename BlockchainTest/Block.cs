@@ -12,7 +12,7 @@ namespace BlockchainTest
         public decimal SettlementAmount { get; set; }
         public DateTime SettlementDate { get; set; }
         public string CarRegistration { get; set; }
-        public int Milage { get; set; }
+        public int Mileage { get; set; }
         public ClaimType ClaimType { get; set; }
 
         public int BlockNumber { get; private set; }
@@ -27,7 +27,7 @@ namespace BlockchainTest
                      decimal settlementAmount, 
                      DateTime settlementDate, 
                      string carRegistration, 
-                     int milage, 
+                     int mileage, 
                      ClaimType claimType,                   
                      IBlock parent)
         {
@@ -36,7 +36,7 @@ namespace BlockchainTest
             SettlementAmount = settlementAmount;
             SettlementDate = settlementDate;
             CarRegistration = carRegistration;
-            Milage = milage;
+            Mileage = mileage;
             ClaimType = claimType;
             CreatedDate = DateTime.UtcNow;
             SetBlockHash(parent);
@@ -44,7 +44,7 @@ namespace BlockchainTest
 
         public string CalculateBlockHash(string previousBlockHash)
         {
-            var tnxHash = ClaimNumber + SettlementAmount + SettlementDate + CarRegistration + Milage + ClaimType;
+            var tnxHash = ClaimNumber + SettlementAmount + SettlementDate + CarRegistration + Mileage + ClaimType;
             var blockHeader = BlockNumber + CreatedDate.ToString() + previousBlockHash;
             var combined = tnxHash + blockHeader;
 

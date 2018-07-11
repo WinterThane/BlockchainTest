@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlockchainMultiTransactionTest.Interfaces
+namespace BlockchainTransactionPoolTest.Interfaces
 {
     public interface ITransaction
     {

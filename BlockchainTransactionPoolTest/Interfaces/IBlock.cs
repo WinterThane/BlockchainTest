@@ -1,27 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace BlockchainTest.Interfaces
+namespace BlockchainTransactionPoolTest.Interfaces
 {
     public interface IBlock
     {
-        //-- data
-        string ClaimNumber { get; set; }
-        decimal SettlementAmount { get; set; }
-        DateTime SettlementDate { get; set; }
-        string CarRegistration { get; set; }
-        int Mileage { get; set; }
-        ClaimType ClaimType { get; set; }
+        List<ITransaction> Transactions { get; }
 
-        //-- block header
+        //data
         int BlockNumber { get; }
         DateTime CreatedDate { get; set; }
         string BlockHash { get; }
         string PreviousBlockHash { get; set; }
+        string BlockSignature { get; }
 
-        //-- methods
+        void AddTransaction(ITransaction transaction);
         string CalculateBlockHash(string previousBlockHash);
         void SetBlockHash(IBlock parent);
         IBlock NextBlock { get; set; }
         bool IsValidChain(string prevBlockHash, bool verbose);
+        IKeyStore KeyStore { get; }
     }
 }

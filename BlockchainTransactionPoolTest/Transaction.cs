@@ -1,9 +1,9 @@
 ﻿using BlockChainCrypto;
-using BlockchainMultiTransactionTest.Interfaces;
+using BlockchainTransactionPoolTest.Interfaces;
 using System;
 using System.Text;
 
-namespace BlockchainMultiTransactionTest
+namespace BlockchainTransactionPoolTest
 {
     public class Transaction : ITransaction
     {
